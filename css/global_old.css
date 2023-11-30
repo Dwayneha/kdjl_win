@@ -1,0 +1,179 @@
+/*Reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,em {margin:0; padding:0; outline:none}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,th,var {font-weight:normal; font-style:normal}
+ol,ul {list-style:none}
+table {border-collapse:collapse; border-spacing:0}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-weight:normal; font-size:100%}
+q:before,q:after {content:""}
+.clearfix:after {display:block; content:" "; height:0; clear:both; visibility:hidden} 
+.clearfix{*zoom:1}
+.clear {clear:both; height:0; overflow:hidden}
+.l {float:left}
+.r {float:right}
+body {font:12px/normal 'ËÎÌו'; color:#000; background:#188a8d url(../new_images/index/bg.gif) repeat;}
+a,a:visited {color:#330000; text-decoration:none; blr:expression(this.onFocus=this.blur());outline:none;}
+a:hover {text-decoration:underline}
+input,textarea {font:12px/normal; color:#000}
+#page {background:url(../new_images/index/page_r.jpg) 1000px top no-repeat}
+#main {width:1000px}
+.main_t {height:369px; overflow:hidden}
+.side {width:197px; height:369px; background:url(../new_images/index/side.jpg)}
+.side p {height:369px; _background:none;}
+.content {position:relative; width:803px; height:337px; padding-top:32px; background:url(../new_images/index/content.jpg)}
+.tools,.tools2,.tools_btn {position:absolute; z-index:10; right:0; top:0; width:185px; height:45px}
+.tools {z-index:5; background:url(../new_images/index/tools.png); _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='image', src='../new_images/index/tools.png')}
+.tools2{
+	z-index:5; background:url(../images/tip.gif); _background:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='image', src='../images/tip.gif')
+}
+.tools_btn a {float:left; width:46px; height:45px; text-indent:-9999px; overflow:hidden; background:url(../new_images/index/none.gif); cursor:pointer}
+.tools_btn a.msg {background:url(../new_images/index/msgg.gif) 7px 0px no-repeat}
+.gamebox {width:788px; height:319px; overflow:hidden; background:url(../new_images/index/gamebox_bg.jpg)}
+.chat {position:relative; width:710px; height:239px; background:url(../new_images/index/chat_bg.jpg)}
+.ol {position:absolute; right:54px; top:8px; color:#fff}
+.chat_cont {position:absolute; left:60px; top:47px; width:595px; height:145px; line-height:20px; overflow-x:hidden; overflow-y:auto; scrollbar-arrow-color:#fff; scrollbar-face-color:#603011; scrollbar-darkshadow-color:#603011; scrollbar-base-color:#996332; scrollbar-highlight-color:#996332; scrollbar-shadow-color:#996332; scrollbar-track-color:#996332; scrollbar-3dlight-color:#603011}
+.chat_cont u {cursor:pointer}
+.chat_cont img {margin:0 5px}
+
+.chat_tool {position:absolute; left:41px; top:209px; background:url(../new_images/index/inp.gif) no-repeat}
+.chat_tool input,.chat_tool img,.chat_tool div {float:left; margin-right:5px}
+.chat_tool img {cursor:pointer}
+.chat_tool .inp {width:336px; height:17px; padding:2px 0 0 6px; border:0; background:none}
+.chat_tool .but {width:46px; height:19px; border:0; background:url(../new_images/index/btn.gif); cursor:pointer}
+.chat_tool ul.hidden {display:none}
+
+.select_lt,.select_pd,.select_ys {position:relative; width:64px; height:19px}
+.select_lt {width:72px}
+.select_ys {width:44px}
+.select_lt span,.select_pd span,.select_ys span {display:block; height:19px; line-height:19px; padding-left:9px; cursor:pointer; background:url(../new_images/index/s2.gif)}
+.select_lt span {background:url(../new_images/index/s1.gif)}
+.select_ys span {background:url(../new_images/index/s3.gif)}
+.select_lt ul,.select_pd ul,.select_ys ul {position:absolute; top:-108px; left:0; width:70px; background:#ffdba1; border:1px solid #cfb283}
+.select_pd ul {width:62px}
+.select_ys ul {top:-87px; width:42px}
+.select_lt li,.select_pd li,.select_ys li {height:21px; line-height:21px}
+.select_lt li.i,.select_pd li.i {text-align:center; font-style:italic; font-weight:bold; background:#d37c66}
+.select_lt a,.select_lt a:visited,.select_pd li a,.select_ys li a,.select_pd li a:visited,.select_ys li a:visited {display:block; height:21px; padding-left:9px; text-decoration:none}
+.select_lt a:hover,.select_pd li a:hover,.select_ys li a:hover {text-decoration:none; background:#cfb283}
+.tip {position:relative; width:290px; height:239px; background:url(../new_images/index/tip_bg.jpg)}
+.wiki {height:38px; margin:16px 0 0 12px; padding:7px 0 0 77px; background:url(../new_images/index/so_bg.gif) no-repeat}
+.wiki input.inp {float:left; width:128px; height:17px; padding:2px 0 0 3px; margin-right:5px; border:none; background:none}
+.wiki input.btn {float:left; width:46px; height:19px; border:none; background:url(../new_images/index/so_btn.gif); cursor:pointer}
+.news {margin:30px 0 0 53px; width:200px; height:66px; overflow:hidden}
+.news li {height:22px; line-height:22px}
+.news li span {float:right}
+.news a,.news a:visited {color:#ffe468}
+.link {padding-top:15px; height:24px; overflow:hidden}
+.link li {float:left; width:42px; margin-right:5px}
+.link a {display:block; width:42px; height:24px; text-indent:-9999px; overflow:hidden; background:url(../new_images/index/none.gif)}
+.link a.pay {background:url(../new_images/index/pay.gif) 2px 4px no-repeat}
+.footer {padding:0 30px; height:32px; line-height:30px; background:url(../new_images/index/footer.jpg)}
+.footer a {margin:0 10px}
+
+
+.tasksroll{width:137px;height:140px;overflow-x:hidden;overflow-y:scroll;scrollbar-face-color:#E1D395;scrollbar-highlight-color:#ffffff;scrollbar-3dlight-color:#E1D395;scrollbar-shadow-color:#ffffff;scrollbar-darkshadow-color:#F3EDC9;scrollbar-track-color:#F3EDC9;scrollbar-arrow-color:#ffffff;margin-top:10px;margin-left:3px;color:#7f4c00;padding:2px;line-height:20px;}
+.tasksroll td{clear:both;height:20px;margin:2px 0;font-size:12px;}
+.tasksroll td a span{padding:0 10px 0 0;height:20px;float:left;overflow:hidden;cursor:pointer}
+.tasksroll td a{float:left;font-size:12px;height:20px;padding:0 0 0 10px;}
+.tasksroll ul td a:hover{color:#BF7D1A; text-decoration:none;}
+
+
+.list li {float:left; width:100%; height:24px; overflow:hidden; border-bottom:1px dashed #dfc8a3}
+.list a,.list a:visited {display:block; height:24px; line-height:25px; overflow:hidden; color:#915d0c; cursor:pointer}
+.list a:hover {color:#ff4200; font-weight:bold; background:url(../new_images/task/list_hover.jpg) left 1px no-repeat}
+.list li p {float:left; text-align:center}
+.l1 p.p1 {width:40px; text-align:center}
+.l1 p.p1 img {width:18px; height:18px; padding-top:3px}
+.l1 p.p2 {width:130px}
+.l1 p.p3 {width:100px}
+.l1 p.p4 {width:40px}
+
+
+.box_task,.box_pack,.box_msg {display:none; position:absolute; left:250px; top:105px; width:500px; height:410px; overflow:hidden; background:url(../new_images/task/task.gif)}
+.box_pack,.box_msg {top:0px;width:370px; left:315px; background:url(../new_images/task/pack.gif)}
+.box_msg {height:380px; top:120px; background:url(../new_images/task/msg.gif)}
+.box_cont {position:relative; color:#724908}
+.close_btn {position:absolute; right:22px; top:10px; width:25px; height:17px; background:url(../new_images/task/none.gif)  repeat scroll 0 0 transparent; cursor:pointer}
+
+.i_pack {position:absolute; left:135px; top:19px; width:180px; font-weight:bold}
+.pack_title {position:absolute; left:23px; top:40px; width:328px; height:29px}
+.pack_title li {height:29px; border:none; font-weight:bold}
+.pack_title li p {line-height:29px}
+
+.pack_cont,.msg_cont {position:absolute; left:23px; top:69px; width:328px; height:288px; overflow-x:hidden; overflow-y:auto; scrollbar-arrow-color:#ffffff; scrollbar-face-color:#e1d395; scrollbar-darkshadow-color:#e1d395; scrollbar-base-color:#f3edc9; scrollbar-highlight-color:#f3edc9; scrollbar-shadow-color:#f3edc9; scrollbar-track-color:#f3edc9; scrollbar-3dlight-color:#e1d395}
+.msg_cont {top:41px; height:318px}
+
+.msg_cont li p {padding-left:40px; background:url(../new_images/task/ico_msg.gif) 10px center no-repeat}
+.i_task {position:absolute; left:119px; top:20px}
+.i_task li {float:left; width:42px; height:42px; margin-right:8px}
+.i_task li a,.i_task li a:visited {display:block; height:40px; text-align:center; color:#b18033; background:#edcf9e; border:1px solid #b7945b}
+.i_task li#date {width:120px; line-height:20px}
+
+.task_nav {position:absolute; left:20px; top:70px; width:183px}
+.task_list {height:269px; overflow:hidden}
+.task_list a {display:block; height:25px; background:url(../new_images/task/task_list.gif)}
+.task_list a:hover,.task_list a.on { text-decoration:none; background-position:0 -25px}
+.task_list p {line-height:25px; padding:0 20px 0 30px; color:#915d0c; font-weight:bold; background:url(../new_images/task/ico_2.gif) 10px center no-repeat}
+.task_list a.on p {background:url(../new_images/task/ico_1.gif) 10px center no-repeat}
+.task_list a p.act {color:#ff4200}
+.task_pages {width:117px; height:17px; margin:0 auto; background:url(../new_images/task/task_pages.gif)}
+.task_pages a {float:left; width:17px; height:17px; text-indent:-999px; overflow:hidden; background:url(../new_images/task/none.gif); cursor:pointer}
+.task_pages span {float:left; width:83px; height:17px; line-height:17px; text-align:center}
+.task_cont {position:absolute; left:212px; top:70px; width:268px}
+.task_nav h2,.task_cont h2 {height:29px; padding:0 15px; line-height:29px; font-weight:bold}
+.task_cont h2 {text-align:right}
+.task_cont_list {display:none; height:290px; overflow-x:hidden; overflow-y:auto; scrollbar-arrow-color:#ffffff; scrollbar-face-color:#e1d395; scrollbar-darkshadow-color:#e1d395; scrollbar-base-color:#f3edc9; scrollbar-highlight-color:#f3edc9; scrollbar-shadow-color:#f3edc9; scrollbar-track-color:#f3edc9; scrollbar-3dlight-color:#e1d395}
+.task_cont ul {}
+.task_cont li {line-height:24px}
+.task_cont li p {padding-left:10px; width:190px; text-align:left; cursor:pointer}
+.task_cont li span {float:left; padding-left:5px;cursor:pointer}
+.task_cont h2 a{text-align:right; text-decoration:none; color:#724908; cursor:pointer}
+
+.pac_btn {position:absolute; left:53px; top:370px}
+.pac_btn input {float:left; margin-right:11px}
+.ico_btn {width:59px; height:17px; *height:17px; *padding-top:2px; color:#772200; border:none; background:url(../new_images/task/ico_btn.gif); cursor:pointer}
+
+
+
+.tip02{left:16px;width:400px;top:397px;position:absolute;z-index:999;height:20px; cursor:pointer; text-align:center}
+.backbg{display:none;width:100%;height:100%;left:0;position:absolute;z-index:99;background:#000; filter:alpha(opacity=50); -moz-opacity:0.5; opacity:0.5}
+.box_task_show_123{ background:url(../new_images/index/task_dlg_box.png) no-repeat; width:432px; height:510px; padding-top:80px; padding-left:18px;display:none;color:#237200;z-index:100000;position:absolute;}
+.box_text_top{ line-height:20px; color:#985c00; width:363px; padding-left:12px; height:100px;}
+.task_win,.task_over{ width:398px;}
+#taskbtn1,#taskbtn2,#taskbtn3,#colsetask,#colsefox{position:absolute;z-index:999;height:20px; cursor:pointer;}
+#taskbtn1{left:77px;width:75px;top:429px;}
+#taskbtn2{left:176px;width:73px;top:429px;}
+#taskbtn3{left:278px;width:71px;top:429px;}
+#colsetask{left:394px;width:23px;top:60px;}
+#colsefox{left:395px;width:23px;top:8px;}
+.task_win_scroll,.task_over_scroll,.box_text_top{overflow-x:hidden; overflow-y:auto; scrollbar-arrow-color:#ffffff; scrollbar-face-color:#e1d395; scrollbar-darkshadow-color:#e1d395; scrollbar-base-color:#f3edc9; scrollbar-highlight-color:#f3edc9; scrollbar-shadow-color:#f3edc9; scrollbar-track-color:#f3edc9; scrollbar-3dlight-color:#e1d395}
+.task_win_scroll{ width:375px; height:80px; line-height:20px;}
+.task_over_scroll{ width:375px; height:80px; line-height:20px;}
+#rmenu {   
+        list-style:none;
+        margin:0;
+        padding:0;      
+        border:1px solid #CCCCCC;   
+        width:120px;   
+        position:absolute;   
+        left:0px;   
+        top:0px;   
+        display:none;   
+        z-index:99999;   
+        background-color:#F3F3F3   
+    }   
+#rmenu li{   
+	width:118px;
+	height:16px;
+	font-size:12px;   
+	margin-left:1px;   
+	margin-right:2px;   
+	cursor:pointer;   
+	padding-top:3px;   
+	padding-left:2px;   
+}   
+#rmenu li:hover{   
+	background-color:#c0c0c0;   
+	color:#FF0000;   
+}   

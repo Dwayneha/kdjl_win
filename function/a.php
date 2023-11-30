@@ -1,0 +1,9 @@
+<?php 
+require_once('../config/config.game.php');
+var_dump($_mem);
+print_r($_pm['mem']->get('MEM_TEAM_LISTstr'));
+if(isset($_GET['d']))
+{
+	$_pm['mem']->del('MEM_TEAM_LISTstr');
+}
+?>

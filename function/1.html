@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta   http-equiv="Expires"   CONTENT="0" />
+<meta   http-equiv="Cache-Control"   CONTENT="no-cache" />
+<meta   http-equiv="Pragma"   CONTENT="no-cache" />
+<script language="javascript" src="../javascript/prototype.js"></script>
+<script type="text/javascript" src="../javascript/objectswap.js"></script>
+<title></title>
+<link href="../css/iframe.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	margin:0;
+	font-size: 12px;
+	margin-left: 8px;
+	margin-top: 8px;
+}
+a {
+	font-size: 12px;
+}
+-->
+</style></head>
+<!--[if IE 6]>
+<script type="text/javascript">try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+<![endif]-->
+<script language="javascript">
+//document.onkeydown=function(){return   false}   
+var bid=0;
+var price=0;
+var bbr = '';
+var gwr = '';
+var endtips = '';
+var using = false;
+var readH = '';
+var fc	  = 0; //回合数。
+var bb=['熊猫orz宝宝',57,'神',3403,3373,0,1064,'1:1,42:1','z83.gif','g83.gif','s83.gif',12844,'5888','2128','63620','8629296']; // 宝贝数据 a,m =>3,4 h,m => 5,6
+var gg=['',,'',,,,,'','','','',]; // 怪物数据
+var bbjn=[['普通攻击',1,'1',0,'10','hp:1%','s1.gif',0,0,1],['orz俯猿?',1,'1',0,'500','hp:10%','s1.gif',0,100,42]]; // 宝贝技能.[],[]
+var bbfzp=[['祝福药水（特大）',4,199231],['治疗药水(小)',1,203746]]; // 宝贝辅助道具.name:num,name:num;
+var catcharr=[];
+var bbhpmax = bb[12];
+var bbmpmax = bb[13];
+var gwhpmax = gg[5];
+var gwmpmax = gg[6];
+var initYFont = 0;
+var useprops = 0;
+var petsid=12844;
+var bbcur = bb[5];
+var bbmcur=bb[6];
+var gwcur = 0;
+var catchs= 0;
+var gimg='g';
+var inmap=7;
+var fuser='';
+var wt=10;
+window.parent.waittime=wt;
+
+function preloader() { 
+	var imageObj = new Image(); 
+	var images = ['ui/hp.gif','ui/mp.gif','ui/exp.gif','ui/opcatch.gif','ui/ophp.gif','ui/opmp.gif','ui/opout.gif'];
+	for(var i=0; i<images.length; i++)
+	{imageObj.src=''+IMAGE_SRC_RUL+'/images/'+images[i];} 
+}
+// Add by DuHao 2009-5-13
+function copyWord(words)
+{
+	window.parent.$('baike_input').value=words;
+}
+</script>
+<!--[if IE 6]>
+<script type="text/javascript">try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {}
+</script>
+<![endif]-->
+
+<script language="javascript">var teamfightlock="NONE";var teamLeader=611;</script><body>
+<div id="teamplayer" style="position:absolute; left:125px; top:85px; width: 180px; padding:0px;over-flow:hidden; z-index:10"> <table width="180" border="0">
+  <tr>
+    <td width="180" align="center" bgcolor="#999900" style="color:#FFFFFF;cursor:pointer;font-size:12px" onclick="if(document.getElementById('teamplayerlist').style.display=='none'){document.getElementById('teamplayerlist').style.display='block'}else{document.getElementById('teamplayerlist').style.display='none'}">队员列表</td>
+  </tr>
+  <tr id="teamplayerlist" style="display:none; font-size:12px"  bgcolor="#FFFFFF">
+    <td width="180" align="center">
+    <table wdith='180' border=0 cellspadding=0 cellspacing=0 id='teamplayerlistdetails'></table>
+    </td>
+  </tr>
+</table> </div><script language="javascript">var mmonsters=[];
+
+mmonsters[mmonsters.length]=['黑蚁',43,'5',317,162,5739,379,'1:1,30:3','z33.gif','g33.gif','s33.gif',83];
+
+mmonsters[mmonsters.length]=['黑蚁',41,'5',303,154,5048,364,'1:1,30:3','z33.gif','g33.gif','s33.gif',82];
+</script><div id="mmonster" style="position:absolute; left:435px; top:35px; width: 1850px; padding:0px;over-flow:hidden; z-index:10"> <table width="180" border="0">
+  <tr>
+    <td width="180" align="center" bgcolor="#999900" style="color:#FFFFFF;cursor:pointer;font-size:12px" onclick="if(document.getElementById('showmmonsterlist').style.display=='none'){document.getElementById('showmmonsterlist').style.display='block'}else{document.getElementById('showmmonsterlist').style.display='none'}">怪物列表</td>
+  </tr>
+  <tr id="showmmonsterlist" style="display:none; font-size:12px"  bgcolor="#FFFFFF">
+    <td width="180" align="center">
+    <table wdith='180' border=0 cellspadding=0 cellspacing=0 id=showmmonsterlistdetails><tr><td width=180  style='color:#ff0000' >43&nbsp;&nbsp;&nbsp;&nbsp;Lvl:黑蚁</td></tr><tr><td width=180 >41&nbsp;&nbsp;&nbsp;&nbsp;Lvl:黑蚁</td></tr></table>
+    </td>
+  </tr>
+</table> </div>
+
+<div style="width:778px;height:311px; position:absolute; background-image:url(../images/map/t7/7.swf)" id="fm">
+
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="778" height="311">
+			  <param name="movie" value="../images/map/t7/7.swf">
+			  <param name="quality" value="high">
+			  <param name="wmode" value="transparent">
+			  <embed src="../images/map/t7/7.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="778" height="311" wmode="transparent"></embed>
+           </object>
+  
+
+
+
+
+<!--player info-->
+<div id="team0" style="position:absolute;left:8px;top:8px;border:0px; z-index:98">
+<!--宠物名-->
+ <div id="pname" style="padding-top:3px;text-align:center;position:absolute; z-index:101;left:8px;top:2px;border:0px; height:19px; width:147px; background:url(../images/ui/newmap/zd01.gif)">
+ 我错了
+</div>
+<!--头像-->
+ <div style="position:absolute; z-index:101;left:5px;top:21px;border:0px; height:47px; width:90px;background:url(../images/ui/newmap/zd02.gif)">
+ <div style="position:absolute; z-index:101;left:23px;top:1px;border:0px; height:36px; width:36px;">
+ <img src="../images/bb/t83.gif" width="36" height="36">
+</div>
+</div>
+<!--hp,mp,exp-->
+<div style="position:absolute; z-index:99;left:70px;top:23px;border:0px; height:48px; width:160px;">
+<img src="../images/ui/newmap/zd04.gif" style="opacity: 0.4; filter : progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=40,finishOpacity=100);" />
+</div>
+<!--hp-->
+<div style="position:absolute; z-index:100;left:70px;top:24px;border:0px; height:16px; width:160px;">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/ui/newmap/xthong01.gif" width="156" border="0" height="16" id="php"/></td>
+    <td width="4"><img src="../images/ui/newmap/xthong00.gif" width="4" border="0" height="16"/></td>
+  </tr>
+</table>
+</div>
+<!--mp-->
+<div style="position:absolute; z-index:100;left:70px;top:41px;border:0px; height:16px; width:160px;">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/ui/newmap/xtlan01.gif" width="155" border="0" height="16" id="pmp"/></td>
+    <td width="5"><img src="../images/ui/newmap/xtlan00.gif" width="5" border="0" height="16"/></td>
+  </tr>
+</table>
+</div>
+<!--exp-->
+<div style="position:absolute; z-index:100;left:70px;top:59px;border:0px; height:11; width:160px;">
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="../images/ui/newmap/xthuang01.gif" width="156" border="0" height="11" id="pexp"/></td>
+    <td width="4"><img src="../images/ui/newmap/xthuang00.gif" width="4" border="0" height="11"/></td>
+  </tr>
+</table>
+</div>
+
+<!--宠物名-->
+<div id='petname' style="position:absolute; z-index:100;left:4px;top:66px;border:0px; height:48px; width:99px; background:url(../images/ui/newmap/zd03.gif)">
+
+</div>
+</div>
+
+</div>
+
+
+
+
+<!-- jn tools-->
+<div style="position:absolute;left:8px;top:251px;  background-image:url(../images/ui/newmap/zdzsk.gif);
+width:778px;height:71px;" id="tooldiv">
+<div id="tauto" style="position:absolute; width:37px; height:34px; left: 218px; top: 7px; cursor:pointer;"  onclick="loadtool(1);">&nbsp;&nbsp;<br/>&nbsp;&nbsp;</div>
+  
+  <div id="tset" style="position:absolute; width:37px; height:34px; left: 259px; top: 7px; cursor:pointer;"  onclick="loadtool(2);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="tack" style="position:absolute; width:37px; height:34px; left: 299px; top: 10px; cursor:pointer;"  onclick="loadtool(3);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="tskill" style="position:absolute; width:37px; height:34px; left: 340px; top: 10px; cursor:pointer;"  onclick="loadtool(4);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="thelp" style="position:absolute; width:37px; height:34px; left: 384px; top: 10px; cursor:pointer;"  onclick="loadtool(5);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="tcatch" style="position:absolute; width:37px; height:34px; left: 428px; top: 10px; cursor:pointer;"  onclick="loadtool(6);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="tprops" style="position:absolute; width:37px; height:34px; left: 472px; top: 10px; cursor:pointer;"  onclick="loadtool(7);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+  <div id="texit" style="position:absolute; width:37px; height:34px; left: 513px; top: 10px; cursor:pointer;" onclick="loadtool(8);">&nbsp;&nbsp;<br/>
+  &nbsp;&nbsp;</div>
+  
+</div>
+<!-- -->
+
+<div id="timev" style="width:81px;height:52px; background-image:url(../images/ui/newmap/db.gif);
+position:absolute;left:361px;top:10px;padding-top:25px; text-align:center;font-weight:bold;color:#6A2F06;font-size:25px; font-family:黑体"></div>
+
+<div id="result" style="position:absolute; background:#025B26; left: 270px; height:200px; top: 87px;color:#fff; line-height:1.7;width:246px;;filter:alpha(opacity=60); -moz-opacity:0.6;display:none; padding:10px;z-index:10000; overflow-y:auto"></div>
+
+<div style="position:absolute;left:505px;top:150px;font-weight:bold;width:233px;height:30px;font-family:华文新魏;font-size:12px;color:yellow" id="pfont"></div>
+</div>
+</body>
+</html>
+<script language="javascript" src="../javascript/fight.js"></script>

@@ -1,0 +1,1300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>情人岛</title>
+<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
+<style type="text/css">
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,em {padding:0; margin:0; outline:none;} 
+td{height:25px}
+.task{width:788px;height:319px;background:#f2ebc5; color:#DE4E67; font-size:12px;}
+.task_left{width:138px; height:319px; float:left; background-image:url(../new_images/ui/love01.jpg);}
+.task_right{width:650px; height:319px;float:left; background-image:url(../new_images/ui/love03.jpg);}
+#Layer1 {
+	position:absolute;
+	width:39px;
+	height:17px;
+	z-index:1;
+	left: 89px;
+	top: 281px;
+	background-image: url(../new_images/ui/cangku04.jpg);
+}
+.clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden; }  
+.clearfix{zoom:1;}  
+ol,ul {list-style:none} 
+
+.leaft{margin:3px 0 0 5px;background:url(../new_images/ui/i_bnt.gif) repeat scroll 0 -68px;width:39px;height:17px;border:0 none;cursor:pointer}
+.task_nav{width:640px;height:29px;}
+.task_nav li{float:left;height:29px;}
+.task_nav li a{width:89px;display:block;}
+.a01{background:url(../new_images/ui/love02.jpg) no-repeat;height:29px;}
+.task_nav li.on .a01{background:url(../new_images/ui/love02.jpg) no-repeat 0 -29px;height:29px;}
+.a02{background:url(../new_images/ui/love02.jpg) no-repeat -90px 0;height:29px;}
+.task_nav li.on .a02{background:url(../new_images/ui/love02.jpg) no-repeat -90px -29px;height:29px;}
+
+.task_dh02{width:300px; height:20px; float:left;}
+.cion{height:18px; float:left; padding:3px 0 0 10px; }
+.cion01{height:16px; float:left; padding:5px 0 0 5px; color:#333;}
+.box{width:650px; height:290px; float:left;}
+.box01{width:292px; float:left; padding-left:14px;}
+.box02{width:292px; float:left; height:28px;}
+.box03{width:290px; float:left; border:#F699A2 1px solid; height:235px; background-color:#FDF0F1;line-height:20px;}
+.box04{width:292px; float:left; height:20px; color:#DE4E67; padding-top:4px;}
+.bb01{ height:24px; float:left; padding-top:3px;}
+.bb02{ height:24px; float:right;padding-top:5px;}
+.txt01{color:#FF0000; font-weight:bold; font-size:12px;}
+.dt_list{overflow-x:hidden;overflow-y:scroll;background:#fff;height:210px;width:290px;scrollbar-face-color:#E1D395;scrollbar-highlight-color:#ffffff;scrollbar-3dlight-color:#E1D395;scrollbar-shadow-color:#ffffff;scrollbar-darkshadow-color:#F3EDC9;scrollbar-track-color:#F3EDC9;scrollbar-arrow-color:#ffffff;color:#DE4E67; border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #F699A2;}
+.dt_list li {line-height:24px;height:24px;overflow:hidden;}
+.dt_list li a{overflow:hidden;padding-left:5px}
+.dt_list li span{padding-right:5px;float:right;color:#060}
+.tit01 {border-collapse:collapse;width:100%;font-size:12px; color:#DE4E67;}
+.box05{ width:290px; height:210px; float:left; background-image:url(../new_images/ui/love04.jpg); border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #F699A2;}
+.con{display:none;}
+#apDiv1 {position:absolute;	width:305px;height:20px;z-index:2;left: 361px;top: 4px;}
+.plus{clear:both;height:24px;line-height:24px;text-align:right;color:#DE4E67; padding-top:2px;}
+.conbtn{background:url(../images/bnt.gif) no-repeat;width:39px;height:17px;cursor:pointer;border:0 none;margin:0px 5px 0 5px;}
+.jiehun_an{margin-right:20px;}
+.jiehun_an a{ background:url(../images/an01.jpg); height:15px; width:39px; display:block;text-align:center; line-height:15px; text-decoration:none; color:#990000; padding-top:2px;}
+.jiehun_an a:hover{ background:url(../images/an01.jpg); height:15px; width:39px; display:block;text-align:center; line-height:15px; text-decoration:none; color:#FF0000; padding-top:2px;}
+</style>
+
+<script type="text/javascript">
+	function setTab(name,cursel,n){
+	for(i=1;i<=n;i++){
+	  var menu=document.getElementById(name+i);
+	  var con=document.getElementById("con_"+name+"_"+i);
+	  menu.className=i==cursel?"on":"";
+	  con.style.display=i==cursel?"block":"none";
+	}
+	}
+</script>
+<script language="javascript" src="../javascript/prototype.js"></script>
+</head>
+
+<body>
+<div id="Layer1" style="cursor:pointer" onclick="window.parent.$('gw').src='./function/City_Mod.php?op=2'">
+        <label></label>
+      </div>
+<div class="task">
+	<div class="task_left"></div>
+          
+    <div class="task_right">
+    
+   	  <ul class="task_nav">
+    <li id="tab1" onclick="setTab('tab',1,2)" class="on"><a class="a01" href="javascript:void(0)"></a></li>
+    <li id="tab2" onclick="setTab('tab',2,2)"><a class="a02" href="javascript:void(0)"></a></li>
+    </ul>    
+<div class="dt_task" id="con_tab_1">
+
+		<div class="box01">
+				<div class="box02">
+					<div class="bb01"><img src="../new_images/ui/icon08.jpg" width="65" height="25" /></div>
+                    <div class="bb02">
+                  <table width="150" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="104" align="right"><input id="txtname" name="textfield" type="text" size="10" /></td>
+                <td width="46" align="right"><img src="../images/search.jpg" width="41" height="19" onclick="merge_sel();" /></td>
+                </tr>
+            </table></div>
+		  </div>
+				<div class="box03">
+				  <table border="0" cellspacing="0" class="tit01">
+                    <tr>
+                      <td width="91" height="24" align="center" >玩家姓名</td>
+                      <td width="106" align="left">婚配对象</td>
+                      <td width="89" align="left">婚姻请求</td>
+                    </tr>
+                  </table>
+				<div class="dt_list clearfix">
+				  <table class="tit01" id="shoplist">
+				    #merge_list#
+			      </table>
+				</div>  
+				</div>
+				<div class="plus">数量：<input type="text" class="txt02"  id="num" size="5"  /><input type="button" class="conbtn" onclick="send();" value="求婚" /><input type="button" class="conbtn" value="接受" id='xxx'  onclick="xiangying();"/><input type="button" class="conbtn" id="jj" onclick="jjjj();" value="拒绝" /></div>
+	  </div>
+			<div class="box01">
+				<div class="box02">
+					<div class="bb01"><img src="../new_images/ui/icon09.jpg" width="65" height="25" /></div>
+					<div id='jhjs' align="center" style="position:absolute; width:72px; left:673px; cursor:pointer; padding-top:5px; background-image:url(../images/qzlihun.jpg); color:#600; height: 14px; top: 33px;" onclick="merge_js()"> 结婚介绍</div>
+                </div>
+				<div class="box03">
+					<table border="0" cellspacing="0" class="tit01">
+                 	   <tr>
+                 	     <td height="24" style="width:35px; text-align:left"></td>
+                 	     <td style="width:100px; text-align:left">名称</td>
+                 	     <td style="width:60px; text-align:left">赠送金币</td>
+                 	     <td style="text-align:left">数量</td>
+                  	  </tr>
+               	  </table>
+				 	 <div class="dt_list clearfix">
+      				  <table class="tit01" id="shoplist">#mybag#</table>
+					</div>
+				</div>
+				<div class="plus">背包空间：#baglimit# </div>
+			</div>
+    </div>
+    
+    <div class="dt_task con" id="con_tab_2">
+       
+		<div class="box01">
+				<div class="box02">
+					<div class="bb01"><img src="../new_images/ui/icon08.jpg" width="65" height="25" /></div>
+		  </div>
+				<div class="box03">
+				  <table border="0" cellspacing="0" class="tit01">
+                    <tr>
+                      <td height="24" align="center"><strong><span onclick="setTab1()" style="cursor:pointer"><img src="../new_images/ui/add03.gif" border="0" /></span></strong></td>
+                      <td align="center" ><strong><span id='cww' onclick="chchcw()" style="cursor:pointer; display:block; z-index:100;" class="jiehun_pt1"><img src="../new_images/ui/add04.gif" border="0" /></span></strong></td>
+                    </tr>
+                  </table>
+				<div class="box05 clearfix">
+				  
+                  <table id="t1" width="260" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:12px" height="150px" >
+            <tr>
+            	<td>
+                    <table>
+                        <tr>
+                            <td width="160" height="142" align="center">
+							<div id="img1" style="padding-right:20px;">#img1#</div>
+							</td>
+                            <td width="110" height="142" align="center">
+							<div id='img2' style="padding-right:20px;">#img2#</div>
+							</td>
+                        </tr>
+                    </table>
+       			</td>
+           </tr>
+          </table>
+          
+          <table id="t2" width="260" height="24" border="0" align="center"  cellpadding="0" cellspacing="0" style="font-size:12px">
+                <tr>
+                     <td  width="110" align="left" valign="middle">
+                                    <select name="select1" id="select1" >
+                                    <option value="0">技能保留</option>
+                                    #chcjnlist#
+                                    </select>
+                     </td>
+                      <td width="190" class="jiehun_pt1" align="center" valign="middle">
+                                    传承倒计时： <span id='ttime'></span>
+                      </td>  
+                </tr>
+          </table>
+          <table id="t3" width="260" height="27" border="0" align="center" cellpadding="0" cellspacing="0" style="font-size:12px">
+            <tr>
+                 <td width="110" align="left" valign="middle">
+                                <select name="select2" id="select2" >
+                                <option value="0">选择传承珠</option>
+                                #chchengzhu# 
+                                </select>
+                 </td>
+                 <td height="30" align="center" width="95" valign="middle">
+                                <img src="../images/an03.jpg" width="65" height="19" border="0" style="cursor:pointer" onclick="yeschuanc()" />
+                 </td>
+
+                 <td width="95" align="center" valign="middle">
+                 				<img src="../images/an02.jpg" width="65" height="19" border="0" style="cursor:pointer"  onclick="wanchengchc()"/>
+                 </td>
+            </tr>
+          </table>
+                  
+				</div>  
+				</div>
+				<div class="plus" id="tabb"><input type="button" class="conbtn" onclick="chuanchen();" value="加入" /><input type="button" class="conbtn" onclick="chuanchen1();" value="取回" /></div>
+				<div class="plus" id='ser' style="display:none;">
+				<table  border="0" cellpadding="0" cellspacing="0" class="jiehun_an" style="font-size:12px;">
+				  <tr height="35">
+					<td width="60">&nbsp;</td>
+					<td align="left" width="70px" valign="top">输入宠物名</td>
+					<td width="50" valign="top" ><input id="serbbname" name="serbbname1" type="text" size="10"/> </td>
+					<td width="50" valign="top">
+					<input type="button" onclick="serchc();" class="conbtn" style="cursor:pointer; background-color:#FFCC00" value="搜搜" />
+					</td>
+				  </tr>
+			</table>
+			</div>
+	  </div>
+			<div class="box01">
+				<div class="box02">
+					<div class="bb01"><img src="../new_images/ui/icon10.jpg" width="65" height="25" /></div>
+				<div id='jhjs' align="center" style="position:absolute; width:72px; left:673px; cursor:pointer; padding-top:5px; background-image:url(../images/qzlihun.jpg); color:#600; height: 14px; top: 33px;" onclick="merge_js1()"> 传承介绍</div>	
+				</div>
+				<div class="box03">
+					<table border="0" cellspacing="0" class="tit01">
+                 	   <tr>
+                 	     <td height="24" style="width:35px; text-align:left"></td>
+                 	     <td style="width:100px; text-align:left;">名称</td>
+                 	     <td style="width:60px; text-align:left">等级</td>
+                 	     <td style="text-align:left">成长</td>
+                  	  </tr>
+               	  </table>
+				 	 <div class="dt_list clearfix">
+      				  <table class="tit01" id="shoplist"> #petslist# </table>
+					</div>
+				</div>
+				<div class="plus">牧场空间：#usemuchang#/#maxmuchang# </div>
+			</div>
+    </div>        
+</div>
+    <div id="apDiv1">
+    	<div class="task_dh02">
+			<div class="cion"><img src="../new_images/ui/icon02.jpg" width="20" height="18" /></div>
+		  <div class="cion01">金币:#money#</div>
+			<div class="cion"><img src="../new_images/ui/icon06.jpg" width="20" height="18" /></div>
+			<div class="cion01">水晶：#sj#</div>
+		</div>
+    </div>
+</div>
+
+<div   id="chclist" style="position:absolute; top:89px; left:163px; margin-top:10px; font-size:12px;overflow-y:auto; overflow-x:auto; scrollbar-face-color:#DFDABC; scrollbar-highlight-color:#ffffff; scrollbar-3dlight-color:#DFDABC; scrollbar-shadow-color:#ffffff; scrollbar-darkshadow-color:#DFDABC; scrollbar-track-color:#DFDABC; scrollbar-arrow-color:#ffffff; height:190px; width:266px; display:none"></div>
+
+<div  id="mergelist" style="position:absolute; top:70px; left:163px; margin-top:10px; display:none; font-size:12px; color:#DE4E67; width: 266px;">
+<div style="height:30px; width:266px;"></div>
+<div id="mergelist1" style="color:#DE4E67;overflow-y:auto; overflow-x:auto; scrollbar-face-color:#DFDABC; scrollbar-highlight-color:#ffffff; scrollbar-3dlight-color:#DFDABC; scrollbar-shadow-color:#ffffff; scrollbar-darkshadow-color:#DFDABC; scrollbar-track-color:#DFDABC; scrollbar-arrow-color:#ffffff; height:160px; width:266px;">
+</div>
+</div>
+
+<div id="mcbbshow" style="height:226px;width:302px;padding:0px; z-index:100; position:absolute; top:70px; left:77px; display:none">
+</div>
+
+
+<div id='js'  style=" border-style: inherit; border-color: #FFCCCC;width:470px; height:275px; position:absolute; left:230px; top:40px; display:none;background-color: #FFF0F8;line-height:17px;">
+   
+	<table style="font-size:12px;">
+    	<tr><td width="10px"></td><td width="447"><span style=" color:#FF0000">(结婚)</span></td>
+    	<td width="51"><span style="cursor:pointer;" onclick="$('js').style.display='none';">关闭×</span></td>
+   	  </tr>
+       <tr><td width="10px"></td><td colspan="2"><span style=" color:#0000FF">求婚：</span>玩家可以使用结婚类物品向未存在婚姻关系的玩家求婚，系统将暂扣结婚类物品;如果对方长时间无响应，玩家可取消该项求婚，结婚类物品将返回求婚玩家背包。
+</td></tr>
+      <tr><td width="10px"></td><td colspan="2"><span style=" color:#0000FF">接受与拒绝：</span>被求婚玩家可以选择拒绝和接受。接受后将建立关系同时得到对方赠送的结婚类物品，同时建立婚姻关系全服公告；如被拒绝后求婚玩家在确定该项拒绝后，求婚物品将返回玩家背包。
+</td></tr>
+<tr><td width="10px"></td><td colspan="2"><span style=" color:#0000FF">婚姻状态：</span>建立婚姻关系的玩家在使用彼此宠物进行传承时，高几率出现优异传承或者完美传承，已婚玩家更可以接受到情侣任务获得丰富奖励。
+
+</td></tr>
+      <tr><td width="10px"></td><td colspan="2">(离婚)</td></tr>
+      <tr><td width="10px"></td><td colspan="2"><span style=" color:#0000FF">正常离婚：</span>玩家申请离婚需要支付2000水晶，另一方24小时做出回应，若未有回应，水晶将返回申请玩家角色中。</td></tr>
+      <tr><td width="10px"></td><td colspan="2"><span style=" color:#0000FF">强制离婚：</span>玩家可以使用5000水晶直接取消掉婚姻关系。</td></tr>
+    </table>
+</div>
+
+<div id='ccjs'  style=" border-style: inherit; border-color: #FFCCCC;width:470px; height:275px; position:absolute; left:230px; top:40px; display:none;background-color:#FFF0F8; overflow:auto">
+   <!--div id='ccjs'  style=" border-style: inherit; border-color: #FFCCCC;width:470px; height:275px; position:absolute; left:230px; top:40px; display:none; FILTER:Alpha(Opacity=80,style=0); -moz-opacity:.1;    
+   opacity:0.8;background-color:#FFF0F8; overflow:auto"-->
+   
+	<table style="font-size:12px;">
+    	<tr><td width="10"></td><td width="447"><span style=" color:#FF0000">(传承)</span></td>
+    	<td width="51"><span style="cursor:pointer;" onClick="$('ccjs').style.display='none';">关闭×</span></td>
+   	  </tr>
+	  <tr><td width="10"></td><td colspan="2"><div style="margin-right:10px; width:98%;line-height:17px;">传承基本要求：<br/>
+1、神系宠物（同时该宠物存在于牧场之中）<br/>
+2、宠物成长400以上，等级90以上<br/>
+3、宠物不能穿戴装备<br/>
+4、背包中存在“传承珠”<br/>
+5、每隔10成长只能传承两次<br/>
+6、每只宠物24小时只能传承一次<br/>
+<br/>
+传承流程：<br/>
+1、将需要传承的宠物放入“牧场”<br/>
+2、进入情人岛传承页面，点击右方选择牧场中需要传承的宠物，然后点击加入（之后你的宠物就可以在“等待传承的宠物”页面显示出来了）<br/>
+3、点击页面上的“等待传承的宠物”选择对方的宠物，点击“进入传承”<br/>
+4、必须要加入“传承珠”才能进入传承，加入所有物品后点击“确认传承”，在对方也确认操作完毕后，传承倒计时开始<br/>
+5、等待时间结束后或者使用水晶加速完成传承后，点击取回，即可在牧场查看到新获得的宠物<br/>
+（特别提示：传承开启后宠物将无法取出，也无法使用，请合理安排传承时间；如遇到页面未刷新，请重新进入情人岛即可刷新信息）<br/>
+（宠物传承有一定机会继承上一个宠物的技能，或者不完全继承，请务必添加汇能珠[技能出现丢失后可以通过涅槃一次再次获得初始技能]）<br/>
+（水晶加速“完成传承”为每分钟1水晶）
+</div>
+</td>
+   	  </tr>
+    </table>
+
+</div>
+</body>
+</html>
+<script>
+var showchc=#showchc#;
+var merid=0;
+var pid=0;
+var bid=0;
+var pos=0;
+var vary=1;
+var chcbb=#chcbb#;//玩家加入bb的id
+var cwid=#cwid#;//玩家自己bb的id
+var t0=#time#;
+var h,m,s,t2;
+var selid=0;
+var merge_id=0;
+var xy=0;
+var jh=0;
+if(showchc==1){
+	/*document.getElementById('tab2').style.display="block";
+	document.getElementById('tab1').style.display="none";*/
+	setTab('tab',2,2)
+	 $('t1').style.display="block";
+	 $('t2').style.display="block";
+	 $('t3').style.display="block";
+	 $('chclist').style.display="none";
+}
+function xy_qx(){
+	if( xy==3 ){
+		$('xxx').value='取消';
+		$('jj').style.display='none';
+	}else if(xy==13){
+		$('xxx').value='取回';
+		$('jj').style.display='none';
+	}else if( xy==1 ){
+		$('jj').style.display='block';
+		$('xxx').value='接受';
+		$('jj').style.backgroundImage='url(../images/bnt.gif)';
+		$('jj').value='拒绝';
+	}else if( xy==6 || xy==2){
+		$('xxx').value='确定';
+		$('jj').style.display='none';
+	}else if(xy==5 ){
+		$('xxx').value='接受';
+		$('jj').style.display='none';
+	}else if( xy==7){
+		//$('jj').style.display='block';
+		//$('jj').style.pixelWidth=65;
+		$('jj').style.width=65+'px';
+		$('jj').style.backgroundImage='url(../images/qzlihun.jpg)';
+		$('xxx').value='离婚';
+		$('jj').value='强制离婚';
+		
+	}else if( xy==4){
+		//$('jj').style.display='block';
+		$('jj').style.width=36+'px';
+		$('xxx').value='接受';
+		$('jj').style.backgroundImage='url(../images/bnt.gif)';
+		$('jj').value='拒绝';
+	}
+}
+function merge_js(){
+	if(jh==0){
+		var js1=$('js');
+		$('ccjs').style.display=='none';
+		if(js1.style.display=='none'){
+			js1.style.display='block';
+		}else{
+			js1.style.display='none';
+		}
+	}else if(jh==1){
+		var js1=$('ccjs');
+		$('js').style.display='none';
+		if(js1.style.display=='none'){
+			js1.style.display='block';
+		}else{
+			js1.style.display='none';
+		}
+	}
+}
+function merge_js1(){
+	var js1 = $('ccjs');
+	if(js1.style.display=='none'){
+		js1.style.display='block';
+	}else{
+		js1.style.display='none';
+	}
+}
+
+function times(t1){
+	h=parseInt(t1/3600);
+	if(h<10){
+		h="0"+h;
+	}
+	t2=t1%3600;
+	m=parseInt(t2/60);
+	s=t2%60;
+	if(m<10){
+		m="0"+m;
+	}
+	if(s<10){
+		s="0"+s;
+	}
+	$('ttime').innerHTML=h+":"+m+":"+s;
+		if(t1==0 || t1<0){
+			window.clearTimeout(clear);
+				var opt = {
+				method: 'get',
+				 onSuccess: function(t) {
+					var v=t.responseText;
+					if(v == 'close')
+					{
+						alert('传承功能已关闭');
+						return;
+					}
+					if(v==2){
+						window.parent.Alert('完成传承，你现在可以取回宠物了！');
+					}else{
+						alert(v);
+					}
+				},
+				on404: function(t) {
+				},
+				onFailure: function(t) {
+				},
+				asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/Chuancheng.php?type=8&cwid='+cwid+'&bid='+chcbb, opt);
+			return;
+		}
+	t1--;
+	clear=window.setTimeout("times("+t1+")",1000);
+	}
+if(t0>0){
+	times(t0);
+}else if(t0==-1){
+	$('ttime').innerHTML="00:00:00";
+}else{
+	$('ttime').innerHTML="24:00:00";
+}
+
+function tyjujue(){
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					if(v=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('解除请求关系。');
+					}else if(v=='141'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('空间不足，赠送的物品没有收回。');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type=8',opt);
+}
+function xiangying(){
+	if(xy==1){
+		agereen(merge_id);
+	}else if(xy==2){
+		//window.parent.Alert('你已经发出了离婚请求，正等待对方响应。');
+		//lihun(2);
+	}else if(xy==7){
+		lihun(1);
+	}else if(xy==3){
+		if(!confirm('您要取消提出婚姻请求吗?！')){
+			return;
+		}
+		qxiao();
+	}else if(xy==13){
+		qxiao();
+	}else if(xy==4){
+		qiuhun(3,merge_id);
+	}else if(xy==5){
+		//window.parent.Alert('你已经拒绝了对方的请求，不能接受。');
+		//quxiaojujue();
+	}else if(xy==6){
+		tyjujue();
+	}
+	merge_id=0;
+	xy=0;
+}
+function jjjj(){
+	if(xy==4){
+		jujue();
+	}else if(xy==7){
+		qiangzhilihun();
+	}else if(xy==1){
+		jujuelihun();
+	}
+}
+
+
+function jujuelihun(){
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					if(v=='1'){
+						window.parent.Alert('你拒绝了对发的离婚请求！');
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+					}else if(v=='2'){
+						window.parent.Alert('你离婚正常，不用拒绝！');
+					}else if(v=='3'){
+						window.parent.Alert('对方已与你无婚姻关系！');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type=11',opt);
+}
+
+
+function lihun(type){
+if(type==1){
+	if(!confirm('如果离婚将扣除你2000水晶，如果对方拒绝离婚或在24小时内没有响应系统将退回您的水晶,您确定要这样做吗？')){
+		return;
+	}
+}
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					//alert(v);
+					if(v=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('请求已发出！');
+					}else if(v=='3'){
+						window.parent.Alert('您已发送一次请求，正在等待对方响应！');
+					}else if(v=='2'){
+						window.parent.Alert('您水晶不足！');
+					}else if(v=='4'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('取消离婚成功！');
+					}else if(v=='5'){
+						window.parent.Alert('取消离婚失败！');
+					}else if(v=='14'){
+						window.parent.Alert('对方已经提出离婚请求！');
+					}else if(v=='15'){
+						window.parent.Alert('对方已经与你离婚！');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type='+type,opt);
+}
+function qiangzhilihun(){
+	if(!confirm('如果强制离婚将扣除你5000水晶，您确定要这样做吗？')){
+		return;
+	}
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					//alert(v);
+					if(v=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('成功离婚！');
+					}else if(v=='3'){
+						window.parent.Alert('对方已与你无婚姻关系！');
+					}else if(v=='4'){
+						window.parent.Alert('你已提出了离婚请求！');
+					}else if(v=='2'){
+						window.parent.Alert('您水晶不足！');
+					}else if(v=='11'){
+						window.parent.Alert('你与对方已无婚姻关系！');
+					}else if(v=='14'){
+						window.parent.Alert('对方已经提出了离婚！');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type=10',opt);
+}
+//function merge_sel(){
+//	var txt=$('txtname').value;
+//	window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?value="+txt; 
+//}
+function quxiaojujue(){
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					if(v=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('取消成功。');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type=9&mergeid='+merge_id,opt);
+}
+function jujue(){
+	if(merge_id==0 || merge_id==""){
+		window.parent.Alert('没有拒绝对象。');return;
+	}
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					if(v=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('成功拒绝的对方。');
+					}
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type=7&mergeid='+merge_id,opt);
+}
+function qiuhun(type,id){
+if(type==3){
+	if(!confirm('您确实要接受这个婚姻吗？')){
+		return;
+	}
+}
+	var opt={
+			method:'get',
+			onSuccess:function(e){
+					var v=e.responseText;
+					//alert(v);
+					if(v=='1'){
+						window.parent.Alert('数据错误！');
+					}else if(v=='2'){
+						window.parent.Alert('对方还没同意你的离婚请求，咱不能接受其他对象！');
+					}else if(v=='3'){
+						window.parent.Alert('你已经结婚，必须离婚后才可接受其他对象！');
+					}else if(v=='4'){
+						window.parent.Alert('你向其他的玩家发送了结婚请求，必须取消才可接受！');
+					}else if(v=='5'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('您成功接受了这个婚姻！');
+					}
+					else {
+						//window.parent.Alert('未能接受婚姻，可能是玩家取消了对你的请求');
+						//alert(v);
+						
+					}
+					
+				},
+				on404:function(e){
+			},
+			onFailure:function(e){
+			},
+			asynchronous:true  
+		}
+		var ajax=new Ajax.Request('../function/merge.php?type='+type+"&mergeid="+id,opt);
+}
+
+function merge_sel(){
+	var txt=$('txtname').value;
+	var ts=1;
+	if(txt==""){
+		return;
+	}
+	if(txt.indexOf("")==(txt.length-1)){
+		ts='ts';
+	}
+	var opt = {
+			method: 'get',
+			 onSuccess: function(t) {
+			 var x=t.responseText;
+			 	if(x == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+			 var arr=x.split("|");
+			 	merid=arr[0];
+				//alert(x);
+				$('mergelist1').innerHTML="<table border='0' cellpadding='0' cellspacing='0'>"+arr[1]+"</table>";
+				$('mergelist').style.display="block";
+				$('merr').style.display="none";
+				if(x=="|" || arr[0]=="" || arr[1]=="" ){
+			 		window.parent.Alert('玩家不存在!');
+					merid=0;
+			 	}
+			},
+			on404: function(t) {
+			},
+			onFailure: function(t) {
+			},
+			asynchronous:true        
+		}
+		var ajax=new Ajax.Request('../function/Chuancheng.php?type=6&ts='+ts+'&value='+txt, opt);
+	
+}
+
+function sel(obj)
+{
+	if(selid!=0) selid.style.backgroundColor='';
+	selid=obj;
+	obj.style.backgroundColor='#DFD496';
+	try
+	{
+		var pro = $(obj.id.replace("t","s")).innerHTML;
+		$('num').value= parseInt(pro);
+	}
+	catch(e)
+	{
+		$('num').value = "";
+	}
+}
+
+function send(){
+	var nums = parseInt($('num').value); 
+	//alert(merid);
+	if(merid==0 || merid==""){
+		window.parent.Alert('没有可赠送的对象。');return;
+	}
+	if(pid == 0 ){window.parent.Alert('请先选择要赠送的物品。');return;}
+	else{
+	    if(!validInt(nums)) {window.parent.Alert('数量只能是数字！');return false;}
+		else if(nums<1 || nums>100){window.parent.Alert('赠送数量范围是1-100之间的整数！');return;}
+		
+		if (vary==2 && nums!=1)
+		{
+			window.parent.Alert('不可叠加物品只能单一赠送');return;
+		}
+
+		//var sump = price*parseInt(nums);总共将获得 '+sump+' 金币！
+		if(confirm('你确定赠送选中的物品吗? '))
+		{
+			var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t) {
+					 var x=t.responseText;
+			 		var n=parseInt(t.responseText);
+					
+					if(n==0) {
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('赠送物品成功!');
+					//$('mny').innerHTML=parseInt($('mny').innerHTML)+sump;
+					}
+					else if(n==10) window.parent.Alert('您的背包中没有足够的物品可以赠送！');
+					else if(n==110) window.parent.Alert('最多可以送10个礼物！');
+					else if(n==4)  window.parent.Alert('你已经有婚姻了！');
+					else if(n==17)  window.parent.Alert('不能向自己求婚！');
+					else if(n==18)  window.parent.Alert('这个玩家已经向你求婚了！');
+					else if(n==5)  window.parent.Alert('你向别人已经求婚！');
+					else if(n==6)  window.parent.Alert('没有可赠送的对象！');
+					else window.parent.Alert(n);
+					//else window.parent.Alert(x);
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/merge.php?pid='+pid+'&n='+nums+'&mergeid='+merid+'&type=4', opt);
+		}
+		else return;
+	}
+}
+
+function agereen(id){
+	if(!confirm('您同意对方提出的离婚请求吗？')){
+		return;
+	}
+	var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t) {
+					 var x=t.responseText;
+			 		if(x=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('成功离婚!');
+					}else{
+						window.parent.Alert('离婚失败!');
+					}
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/merge.php?mergeid='+id+'&type=5', opt);
+}
+function qxiao(){
+	var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t) {
+					 var x=t.responseText;
+			 		if(x=='1'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php";
+						window.parent.Alert('取消成功!');
+					}else if(x=='141'){
+						window.parent.Alert('取消成功');
+						//alert(x);
+					}
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/merge.php?type=6', opt);
+}
+
+function setTab1(){
+		
+	 $('t1').style.display="block";
+	  $('t2').style.display="block";
+	    $('t3').style.display="block";
+	$('chclist').style.display="none";
+	$('mergelist').style.display="none";
+	$('txtname').value="";
+	$('merr').style.display="block";
+	$('tabb').style.display="block";
+	$('ser').style.display="none";
+	}
+
+//加入传承
+function chuanchen(){
+//alert('ccc');
+	if(bid<0 || bid==""){
+		window.parent.Alert('您还没选择要加入传承的宠物!');
+		return;
+		
+	}else if(cwid>0){
+		window.parent.Alert('已经有宠物加入传承了!');
+		return;
+	}
+	var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t) {
+					 var x=t.responseText;
+						if(x == 'close')
+						{
+							alert('传承功能已关闭');
+							return;
+						}
+			 		if(x=='1' || x=='3'){
+						window.parent.Alert('您还没选择要加入传承的宠物!');
+					}else if(x=='2' || x=='15'){
+						window.parent.Alert('成功添加的玩家的一个宠物!');
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+					}else if(x=='4'){
+						window.parent.Alert('已经加入一个宠物了!');
+					}else if(x=='5'){
+						window.parent.Alert('你已宠物加入传承!');
+					}else if(x=='6'){
+						window.parent.Alert('宠物响应传承!');
+					}else if(x=='7'){
+						window.parent.Alert('宠物正在传承!');
+					}else if(x=='8'){
+						window.parent.Alert('你的宠物已完成传承，请取回宠物!');
+					}else if(x=='10'){
+						window.parent.Alert('不是神宠!');
+					}else if(x=='11'){
+						window.parent.Alert('宠物需达到90级才可传承!');
+					}else if(x=='12'){
+						window.parent.Alert('每隔10成长只能传承2次!');
+					}else if(x=='133'){
+						window.parent.Alert('宠物成长需达到400才可传承!');
+					}else if(x=='13'){
+						window.parent.Alert('每24小时内只可传承一次!');
+					}else if(x=='14'){
+						window.parent.Alert('宠物需达到60的成长才可传承!');
+					}else if(x=='250'){
+						window.parent.Alert('宠物身上存在装备，无法进行传承!');
+					}else if(x=='78'){
+						window.parent.Alert('不好意思,这个宠物已经被玩家取出，请重新选择其他玩家的宠物!');
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+					}else if(x=='79'){
+						window.parent.Alert('这个宠物已经与其他宠物加入传承了，请重新选玩家bb!');
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+					}else{
+						window.parent.Alert(x);
+					}
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/Chuancheng.php?type=1&bid='+bid, opt);
+			bid=0;
+}
+
+function chuanchen1(){
+	
+
+	 if(cwid==0 ||cwid==""){
+		window.parent.Alert('您还没有宠物加入传承!');
+		return;
+	}
+	var opt = {
+			method: 'get',
+			 onSuccess: function(t) {
+			  	var x=t.responseText;
+				if(x == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+					if(x=='1'){
+						window.parent.Alert('您还没有宠物加入传承!');
+					}else if(x=='4'){
+								if(!confirm('请预留背包空间，否则您加入的传承珠或技能保留书可能因背包空间不足而丢失？')){
+									return;
+								}
+							var opt = {
+								method: 'get',
+								onSuccess: function(e) {
+								var y=e.responseText;
+								
+								if(y=='1001014' || y=='1004' || y=='1014'){
+									window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+									window.parent.Alert('背包空间不够，物品丢失!');
+								}else if(y=='4'){
+									window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+									window.parent.Alert('成功取出宠物!');
+								}else{
+									//alert(y);
+								}
+										
+								},
+								on404: function(e) {
+								},
+								onFailure: function(e) {
+								},
+								asynchronous:true        
+								}
+							var ajax=new Ajax.Request('../function/Chuancheng.php?type=10&bid='+cwid+'&c='+chcbb, opt);
+					}else if(x=='2'){
+						window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+						window.parent.Alert('成功取出宠物!');
+					}else if(x=='3'){
+						window.parent.Alert('已经开始传承了，传承结束后才可取回宠物');
+					}else{
+					//alert(x);
+						window.parent.Alert('不能取出宠物!');
+					}
+			},
+			on404: function(t) {
+			},
+			onFailure: function(t) {
+			},
+			asynchronous:true        
+		}
+		var ajax=new Ajax.Request('../function/Chuancheng.php?type=2&bid='+cwid+'&c='+chcbb, opt);
+}
+
+function chchcw(){
+    $('chclist').style.display="block";
+	$('t1').style.display="none";
+	$('t2').style.display="none";
+	$('t3').style.display="none";
+	$('tabb').style.display="none";
+	//$('sss').style.display="none";
+	$('ser').style.display="block";
+	$('cww').style.display="block";
+	//$('cww').style.zindex="block";
+	var opt = {
+			method: 'get',
+			 onSuccess: function(t) {
+			 					if(t.responseText == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+				$('chclist').innerHTML=t.responseText;
+				$('chclist').style.display="block";
+			},
+			on404: function(t) {
+			},
+			onFailure: function(t) {
+			},
+			asynchronous:true        
+		}
+		var ajax=new Ajax.Request('../function/Chuancheng.php?type=3', opt);
+}
+function jinchuanc(b){//进入传承
+	//if(cwid==0 || cwid=="" || cwid<0){
+	//	window.parent.Alert('你还没有加入宠物!');
+	//	return;
+	//}
+	
+	var opt = {
+			method: 'get',
+			 onSuccess: function(t) {
+				var x=t.responseText;
+				if(x == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+				if(x=='1'){
+					window.parent.Alert('加入传承失败!');
+				}else if(x=='2'){
+					$('chclist').style.display="block";
+					$('t1').style.display="none";
+					$('t2').style.display="none";
+					$('t3').style.display="none";
+					window.parent.Alert('加入传承成功!');
+					window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+				}else if(x=='4'){
+					window.parent.Alert('你的宠物已顺利完成传承，请选取回宠物再添加!');
+					//window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+				}else if(x=='3'){
+					window.parent.Alert('正在传承，不能加入!');
+					//window.parent.document.getElementById("gw").src="./function/Merge_Mod.php?show=1";
+				}else if(x=='11'){
+					window.parent.Alert('这个宠物已经取出或已和其他宠物传承了!');
+				}else{
+					window.parent.Alert(x);
+					//alert(x);
+				}
+			},
+			on404: function(t) {
+			},
+			onFailure: function(t) {
+			},
+			asynchronous:true        
+		}
+		var ajax=new Ajax.Request('../function/Chuancheng.php?type=5&bid='+b+'&cwid='+cwid, opt);
+}
+
+
+var equipInfos = {};
+var LastKey = "";
+function showTip(id,bid,sign,type)
+{
+	if(!document.all){
+		var x=Event.x;
+		var y=Event.y;
+	}else{
+		var x=event.x;
+		var y=event.y;
+	}
+	var key = id+"_"+bid+"_"+sign+"_"+type;
+	if(typeof(equipInfos[key])!='undefined'){
+		window.parent.showTips(equipInfos[key],x,y);
+		return;
+	}
+	if(LastKey==key){
+		return;
+	}
+	LastKey=key;
+	var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t){
+				 	equipInfos[key] = t.responseText;
+					window.parent.showTips(t.responseText,x,y);
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+			
+	var ajax=new Ajax.Request('../function/getPropsInfo.php?id='+id+'&bid='+bid+'&sign='+sign+'&type='+type, opt);
+}
+
+function copyWord(words)
+{
+	window.parent.$('baike_input').value=words;
+}
+
+
+var bbT;
+//宠物详细信息
+function mcbbshow(id)
+{
+	var div = $("mcbbshow");
+	if(pos==1){
+		div.style.left=400+'px';
+	}else{
+		div.style.left=77+'px';
+	}
+	 var opt = {
+     	method: 'get',
+		onSuccess: function(t) {
+            var ret = t.responseText;
+            if (ret != "") {
+               div.innerHTML = ret;
+			   div.style.display="block";
+            }
+			bbT=setTimeout("mcbbdisplay()",5000);
+        },
+     	asynchronous:true        
+	}
+	var ajax=new Ajax.Request('../function/mcbbshow.php?id='+id, opt);
+	window.clearTimeout(bbT);
+}
+function yeschuanc(){
+	if(cwid==0 || cwid=="" || cwid<0){
+		window.parent.Alert('您还没选择要加入传承的宠物!');
+		return;
+	}
+	//if(chcbb==0 || chcbb=="" || chcbb<0){
+	//	window.parent.Alert('您还没加入对方传承的宠物!');
+	//	return;
+	//}
+	//alert('sssssssssssssssss');
+	var zhu=$('select2').value;
+	
+	var jn=$('select1').value;
+	//alert('sssss');
+	//if(zhu=="" || zhu==0){
+//		window.parent.Alert('请选择传承珠!');
+//		return;
+//	}
+	
+	var opt = {
+    		 	method: 'get',
+				 onSuccess: function(t){
+				 	 var x= t.responseText;
+					 if(x == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+					 if(x=='1'){
+					 	window.parent.Alert('数据错误!');
+					 }else if(x=='5'){
+					 	//t0=86400;
+						times(86400);
+					 	window.parent.Alert('开始传承!');
+					 }else if(x=='3'){
+					 	window.parent.Alert('已经开始传承了!');
+					 }else if(x=='50'){
+					 	window.parent.Alert('请选择传承珠!');
+					 }else if(x=='22'){
+					 	window.parent.Alert('不好意思,请添加一个其他玩家的宠物，否则不能进行传承哦!');
+					 }else if(x=='4'){
+					 	window.parent.Alert('成功加入传承，等待对方响应!');
+					 }else if(x=='2'){
+					 	window.parent.Alert('已经加入传承，正在等待对方响应!');
+					 }else if(x=='9'){
+					 	window.parent.Alert('已经完成传承,您现在可以取回宠物了!');
+					 }else if(x=='11'){
+					 	window.parent.Alert('没有传承珠!');
+					 }
+					 else if(x=='14'){
+					 	window.parent.Alert('成长超过1200，不能传承');
+					 }
+					 //else {
+//					 alert(x);
+//					 	window.parent.Alert(x);
+//					 }
+    		 	},
+    		 	on404: function(t) {
+    		 	},
+    		 	onFailure: function(t) {
+    		 	},
+    		 	asynchronous:true        
+			}
+	var ajax=new Ajax.Request('../function/Chuancheng.php?type=7&bid='+chcbb+'&cwid='+cwid+'&zhu='+zhu+'&jn='+jn, opt);
+}
+function mcbbdisplay(){
+	var div = $("mcbbshow");
+	div.style.display = "none";
+}
+function wanchengchc(){	
+	var opt = {
+				method: 'get',
+				 onSuccess: function(t) {
+					var v=t.responseText;
+					if(v == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+					if(v=='1'){
+						window.parent.Alert('还没加入宠物！');
+					}else if(v=='3'){
+						window.parent.Alert('你的宠物已经完成传承了哦！');
+					}else if(v=='4'){
+						window.parent.Alert('此时不能完成！');
+					}else if(v=='2'){
+						window.clearTimeout(clear);
+						$('ttime').innerHTML="00:00:00";
+						window.parent.Alert('顺利完成传承！');
+					}else{
+						if(!confirm(v)){
+							return;
+						}
+							var opt = {
+								method: 'get',
+								onSuccess: function(e) {
+								var x=e.responseText;
+										if(x=='1'){
+											window.parent.Alert('还没加入宠物！');
+										}else if(x=='3'){
+											window.parent.Alert('已完成传承！');
+										}else if(x=='10'){
+											window.parent.Alert('您水晶不足！');
+										}else if(x=='2'){
+											window.clearTimeout(clear);
+											$('ttime').innerHTML="00:00:00";
+											window.parent.Alert('顺利完成传承！');
+										}else{
+											alert(x);
+										}
+								},
+								on404: function(e) {
+								},
+								onFailure: function(e) {
+								},
+								asynchronous:true        
+								}
+							var ajax=new Ajax.Request('../function/Chuancheng.php?type=8&cwid='+cwid+'&bid='+chcbb+'&t=2', opt);
+						
+					}
+				},
+				on404: function(t) {
+				},
+				onFailure: function(t) {
+				},
+				asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/Chuancheng.php?type=8&cwid='+cwid+'&bid='+chcbb+'&t=1', opt);
+}
+function serchc(){
+var txt=$('serbbname').value;
+	var opt = {
+				method: 'get',
+				 onSuccess: function(t) {
+					var v=t.responseText;
+					if(v == 'close')
+				{
+					alert('传承功能已关闭');
+					return;
+				}
+					if(v=='2'){
+						$('chclist').innerHTML="";
+						window.parent.Alert('没找到可传承的相关宠物！');
+					}else if(v=='3'){
+						window.parent.Alert('请输入要找的宠物名！');
+					}
+					else {
+					//alert(v);
+						$('chclist').innerHTML=t.responseText;
+					}
+				},
+				on404: function(t) {
+				},
+				onFailure: function(t) {
+				},
+				asynchronous:true        
+			}
+			var ajax=new Ajax.Request('../function/Chuancheng.php?type=9&txt='+txt, opt);
+}
+</script>
